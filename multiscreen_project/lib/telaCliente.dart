@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 class TelaCliente extends StatefulWidget {
+  String value;
+  TelaCliente({this.value}); // parametro opcional
+
   @override
   _TelaClienteState createState() => _TelaClienteState();
 }
 
 class _TelaClienteState extends State<TelaCliente> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,6 +38,10 @@ class _TelaClienteState extends State<TelaCliente> {
                       ),
                     ],
                   ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 16),
+                  child: Text("Olá ${widget.value}, atualmente nossos clientes são: ")
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 16),

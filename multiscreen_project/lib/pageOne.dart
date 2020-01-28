@@ -22,7 +22,7 @@ class _PageOneState extends State<PageOne> {
 
   void abrirCliente() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => TelaCliente()));
+        context, MaterialPageRoute(builder: (context) => TelaCliente(value: "Juan"))); //passando parametro opcional
   }
 
   void abrirContato() {
